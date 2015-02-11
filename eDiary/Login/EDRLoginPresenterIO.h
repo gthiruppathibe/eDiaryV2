@@ -10,7 +10,8 @@
 
 @protocol EDRPresenterInput <NSObject>
 
-- (void) loginCredentialWithEmail:(NSString*)email Password:(NSString*)password;
+- (void) loginCredentialWithEmail:(NSString*)email
+                         Password:(NSString*)password;
 
 @end
 

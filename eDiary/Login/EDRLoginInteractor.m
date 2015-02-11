@@ -17,8 +17,8 @@
 
 #pragma mark delegate method
 
-- (void) loginCredentialWithEmail:(NSString*)email Password:(NSString*)password{
- 
+- (void) loginCredentialWithEmail:(NSString*)email
+                         Password:(NSString*)password {
     dispatch_async (dispatch_get_main_queue(), ^{
         //send a request to web service or core data
         //receive response from web service or core data and send to presener

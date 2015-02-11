@@ -12,7 +12,8 @@
 
 @implementation EDRLoginPresenter
 
-- (void) loginCredentialWithEmail:(NSString*)email Password:(NSString*)password{
+- (void) loginCredentialWithEmail:(NSString*)email
+                         Password:(NSString*)password {
     
     [self.interactor loginCredentialWithEmail:email Password:password];
 }
@@ -21,7 +22,7 @@
     NSString *message = nil;
     switch (authentication) {
         case 1:
-            message = @"Login is success";
+            //redirect to main screen using wire frame
             break;
         case 2:
             message = @"Invalid password";
