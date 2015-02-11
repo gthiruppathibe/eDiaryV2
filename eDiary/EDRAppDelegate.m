@@ -74,7 +74,7 @@
 
 - (void) initialize {
     [self.window setBackgroundColor:[UIColor whiteColor]];
-    [self.window setRootViewController:self.navController];
+    [self.window setRootViewController:self.loginViewController];
     [self.window makeKeyAndVisible];
     //set delegate for VIPER
     [self.loginViewController setPresenter:self.loginPresenter];

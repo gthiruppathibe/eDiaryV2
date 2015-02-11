@@ -6,24 +6,40 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4BCF08CF-26AB-4B04-B2AD-F9C38F79467A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>eDiary</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</key>
 		<string>https://github.com/gthiruppathibe/eDiary.git</string>
+		<key>B8107CE10ED86FA6C35EA8F6801A9C6B01911A9B</key>
+		<string>https://github.com/gthiruppathibe/eDiaryV2.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>eDiary.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</key>
-		<string>eDiary/</string>
+		<string>..eDiary/</string>
+		<key>B8107CE10ED86FA6C35EA8F6801A9C6B01911A9B</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gthiruppathibe/eDiary.git</string>
+	<string>https://github.com/gthiruppathibe/eDiaryV2.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</string>
+	<string>B8107CE10ED86FA6C35EA8F6801A9C6B01911A9B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B8107CE10ED86FA6C35EA8F6801A9C6B01911A9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>eDiary</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
