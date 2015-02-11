@@ -191,7 +191,8 @@
 - (void) btnLoginClicked: (id) sender
 {
     [self screenEnable:NO];
-    [self.presenter loginCredentialWithEmail:self.emailField.text Password:self.passwordField.text];
+    [self.presenter loginCredentialWithEmail:self.emailField.text
+                                    Password:self.passwordField.text];
 }
 
 @end

@@ -15,7 +15,8 @@
 - (void) loginCredentialWithEmail:(NSString*)email
                          Password:(NSString*)password {
     
-    [self.interactor loginCredentialWithEmail:email Password:password];
+    [self.interactor loginCredentialWithEmail:email
+                                     Password:password];
 }
 
 - (void) loginCredentialResponse:(NSInteger)authentication {
