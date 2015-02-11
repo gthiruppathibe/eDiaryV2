@@ -38,7 +38,7 @@
     //TODO: Assume i got async response from server
     dispatch_block_t loginResponseBlock = ^{ @autoreleasepool {
         
-        [self processLoginResponse:1]; //1- success,0-failure
+        [self processLoginResponse:0]; //1- success,0-failure
         
     }};
     dispatch_async(dispatch_get_main_queue(), loginResponseBlock);

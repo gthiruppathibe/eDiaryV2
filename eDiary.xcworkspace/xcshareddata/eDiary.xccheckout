@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</key>
-		<string>..eDiary/</string>
+		<string>..eDiary</string>
 		<key>B8107CE10ED86FA6C35EA8F6801A9C6B01911A9B</key>
 		<string>..</string>
 	</dict>
@@ -46,7 +46,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</string>
 			<key>IDESourceControlWCCName</key>
-			<string>eDiary</string>
+			<string>eDiaryeDiary</string>
 		</dict>
 	</array>
 </dict>

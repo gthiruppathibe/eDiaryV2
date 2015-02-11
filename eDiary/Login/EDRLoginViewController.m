@@ -171,16 +171,26 @@
     UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle: nil message:message delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
     [loginAlert show];
     
-    [self.loginButton setEnabled:true];
-    [self.loginButton setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    [self screenEnable:YES];
 }
 
 #pragma mark perform action
 
+- (void) screenEnable:(BOOL)value {
+    [self.emailField setEnabled:value];
+    [self.passwordField setEnabled:value];
+    [self.loginButton setEnabled:value];
+    if (value == YES) {
+        [self.loginButton setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    }
+    else {
+        [self.loginButton setTitleColor: [UIColor grayColor] forState:UIControlStateNormal];
+    }
+}
+
 - (void) btnLoginClicked: (id) sender
 {
-    [self.loginButton setEnabled:false];
-    [self.loginButton setTitleColor: [UIColor grayColor] forState:UIControlStateNormal];
+    [self screenEnable:NO];
     [self.presenter loginCredentialWithEmail:self.emailField.text Password:self.passwordField.text];
 }
 
