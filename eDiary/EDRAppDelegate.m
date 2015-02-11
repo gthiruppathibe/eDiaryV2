@@ -27,7 +27,7 @@
 @synthesize loginInteractor = _loginInteractor;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self initialize];
+    [self createScreen];
     return YES;
 }
 
@@ -72,7 +72,7 @@
 
 #pragma mark create screen
 
-- (void) initialize {
+- (void) createScreen {
     [self.window setBackgroundColor:[UIColor whiteColor]];
     [self.window setRootViewController:self.loginViewController];
     [self.window makeKeyAndVisible];

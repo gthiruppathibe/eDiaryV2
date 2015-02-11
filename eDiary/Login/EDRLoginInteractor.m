@@ -10,41 +10,22 @@
 #import "EDRLoginInteractor.h"
 
 @interface EDRLoginInteractor()
-{
-    void * isQueueContextKey;
-}
-
-@property (nonatomic,strong) dispatch_queue_t queue;
 
 @end
 
-NSString *const EDRGCDQueueName = @"EDRGCDQueueName";
-
 @implementation EDRLoginInteractor
-
-@synthesize queue = _queue;
 
 #pragma mark delegate method
 
 - (void) loginCredentialWithEmail:(NSString*)email Password:(NSString*)password{
  
+    //perform async login request
     dispatch_block_t loginRequestBlock = ^{ @autoreleasepool {
         
         [self processLoginRequestWithEmail:email Password:password];
         
     }};
-    dispatch_async(self.queue, loginRequestBlock);
-}
-
-#pragma mark property getter method
-
-- (dispatch_queue_t)queue {
-    if (!_queue) {
-        _queue = dispatch_queue_create([EDRGCDQueueName UTF8String], NULL);
-        void *nonNullUnusedPointer = (__bridge void *)self;
-        dispatch_queue_set_specific(_queue, &isQueueContextKey, nonNullUnusedPointer, NULL);
-    }
-    return _queue;
+    dispatch_async(dispatch_get_main_queue(), loginRequestBlock);
 }
 
 #pragma mark process the message

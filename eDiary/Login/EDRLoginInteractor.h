@@ -11,6 +11,6 @@
 
 @interface EDRLoginInteractor : NSObject <EDRLoginInteractorInput>
 
-@property (nonatomic,weak) id<EDRLoginInteractorOutput> presenter;
+@property (nonatomic,strong) id<EDRLoginInteractorOutput> presenter;
 
 @end

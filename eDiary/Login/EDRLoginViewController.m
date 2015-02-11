@@ -134,7 +134,7 @@
     
     NSDictionary *elementDict = NSDictionaryOfVariableBindings(_captionDesc,_emailField,_passwordField,_loginButton);
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(100)-[_captionDesc(25)]-10-[_emailField(25)]-10-[_passwordField(25)]-10-[_loginButton(25)]-(<=400)-|"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(<=100)-[_captionDesc(25)]-10-[_emailField(25)]-10-[_passwordField(25)]-10-[_loginButton(25)]-(<=400)-|"
                                                                       options:NSLayoutFormatDirectionLeadingToTrailing
                                                                       metrics:nil
                                                                         views:elementDict]];
@@ -170,6 +170,9 @@
     
     UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle: nil message:message delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
     [loginAlert show];
+    
+    [self.loginButton setEnabled:true];
+    [self.loginButton setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
 }
 
 #pragma mark perform action
