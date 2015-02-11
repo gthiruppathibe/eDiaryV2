@@ -28,8 +28,7 @@
 
 #pragma mark process the message
 
-- (void) processLoginResponse:(NSInteger) authentication {
-    
+- (void) processLoginResponse:(NSInteger)authentication {
     if ([self.presenter respondsToSelector:@selector(loginCredentialResponse:)]) {
         [self.presenter loginCredentialResponse:authentication];
     }
