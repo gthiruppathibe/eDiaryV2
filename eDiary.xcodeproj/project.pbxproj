@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7396762818F26F46A0C3903D /* libPods-eDiary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A69249BD1A13CCB3E13DD9 /* libPods-eDiary.a */; };
+		D513F7EB1A8875F500517A56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F7EA1A8875F500517A56 /* main.m */; };
+		D513F7EE1A8875F500517A56 /* EDRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F7ED1A8875F500517A56 /* EDRAppDelegate.m */; };
+		D513F7F11A8875F500517A56 /* eDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D513F7EF1A8875F500517A56 /* eDiary.xcdatamodeld */; };
+		D513F7F91A8875F500517A56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D513F7F81A8875F500517A56 /* Images.xcassets */; };
+		D513F7FC1A8875F500517A56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D513F7FA1A8875F500517A56 /* LaunchScreen.xib */; };
+		D513F8081A8875F500517A56 /* eDiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F8071A8875F500517A56 /* eDiaryTests.m */; };
+		D513F9591A8B41D700517A56 /* EDRLoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F9521A8B41D700517A56 /* EDRLoginInteractor.m */; };
+		D513F95A1A8B41D700517A56 /* EDRLoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F9551A8B41D700517A56 /* EDRLoginPresenter.m */; };
+		D513F95B1A8B41D700517A56 /* EDRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F9571A8B41D700517A56 /* EDRLoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D513F8021A8875F500517A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D513F7DD1A8875F500517A56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D513F7E41A8875F500517A56;
+			remoteInfo = eDiary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		966180B0B9008798B00A23DE /* Pods-eDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eDiary/Pods-eDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		A0A69249BD1A13CCB3E13DD9 /* libPods-eDiary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eDiary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA58ED2D60EF799BB1E508B /* Pods-eDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-eDiary/Pods-eDiary.release.xcconfig"; sourceTree = "<group>"; };
+		D513F7E51A8875F500517A56 /* eDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D513F7E91A8875F500517A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D513F7EA1A8875F500517A56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D513F7EC1A8875F500517A56 /* EDRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDRAppDelegate.h; sourceTree = "<group>"; };
+		D513F7ED1A8875F500517A56 /* EDRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDRAppDelegate.m; sourceTree = "<group>"; };
+		D513F7F01A8875F500517A56 /* eDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eDiary.xcdatamodel; sourceTree = "<group>"; };
+		D513F7F81A8875F500517A56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D513F7FB1A8875F500517A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D513F8011A8875F500517A56 /* eDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D513F8061A8875F500517A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D513F8071A8875F500517A56 /* eDiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eDiaryTests.m; sourceTree = "<group>"; };
+		D513F9501A8B3AD700517A56 /* EDRHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDRHeader.h; sourceTree = "<group>"; };
+		D513F9511A8B41D700517A56 /* EDRLoginInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginInteractor.h; path = Login/EDRLoginInteractor.h; sourceTree = "<group>"; };
+		D513F9521A8B41D700517A56 /* EDRLoginInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDRLoginInteractor.m; path = Login/EDRLoginInteractor.m; sourceTree = "<group>"; };
+		D513F9531A8B41D700517A56 /* EDRLoginInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginInteractorIO.h; path = Login/EDRLoginInteractorIO.h; sourceTree = "<group>"; };
+		D513F9541A8B41D700517A56 /* EDRLoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginPresenter.h; path = Login/EDRLoginPresenter.h; sourceTree = "<group>"; };
+		D513F9551A8B41D700517A56 /* EDRLoginPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDRLoginPresenter.m; path = Login/EDRLoginPresenter.m; sourceTree = "<group>"; };
+		D513F9561A8B41D700517A56 /* EDRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginViewController.h; path = Login/EDRLoginViewController.h; sourceTree = "<group>"; };
+		D513F9571A8B41D700517A56 /* EDRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDRLoginViewController.m; path = Login/EDRLoginViewController.m; sourceTree = "<group>"; };
+		D513F9581A8B41D700517A56 /* EDRLoginPresenterIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginPresenterIO.h; path = Login/EDRLoginPresenterIO.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D513F7E21A8875F500517A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7396762818F26F46A0C3903D /* libPods-eDiary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D513F7FE1A8875F500517A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		035134D9F3F722FCB6A4EACE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0A69249BD1A13CCB3E13DD9 /* libPods-eDiary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A82D78BA87A147A8338D2509 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				966180B0B9008798B00A23DE /* Pods-eDiary.debug.xcconfig */,
+				CEA58ED2D60EF799BB1E508B /* Pods-eDiary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D513F7DC1A8875F500517A56 = {
+			isa = PBXGroup;
+			children = (
+				D513F7E71A8875F500517A56 /* eDiary */,
+				D513F8041A8875F500517A56 /* eDiaryTests */,
+				D513F7E61A8875F500517A56 /* Products */,
+				A82D78BA87A147A8338D2509 /* Pods */,
+				035134D9F3F722FCB6A4EACE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D513F7E61A8875F500517A56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D513F7E51A8875F500517A56 /* eDiary.app */,
+				D513F8011A8875F500517A56 /* eDiaryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D513F7E71A8875F500517A56 /* eDiary */ = {
+			isa = PBXGroup;
+			children = (
+				D513F94F1A8B3A9C00517A56 /* Common */,
+				D513F9441A8B292A00517A56 /* Model */,
+				D513F9431A8B291700517A56 /* Interactor */,
+				D513F9421A8B290C00517A56 /* Presenter */,
+				D513F9411A8B28FC00517A56 /* Views */,
+				D513F7E81A8875F500517A56 /* Supporting Files */,
+			);
+			path = eDiary;
+			sourceTree = "<group>";
+		};
+		D513F7E81A8875F500517A56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D513F7F81A8875F500517A56 /* Images.xcassets */,
+				D513F7FA1A8875F500517A56 /* LaunchScreen.xib */,
+				D513F7E91A8875F500517A56 /* Info.plist */,
+				D513F7EA1A8875F500517A56 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D513F8041A8875F500517A56 /* eDiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D513F8071A8875F500517A56 /* eDiaryTests.m */,
+				D513F8051A8875F500517A56 /* Supporting Files */,
+			);
+			path = eDiaryTests;
+			sourceTree = "<group>";
+		};
+		D513F8051A8875F500517A56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D513F8061A8875F500517A56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D513F9411A8B28FC00517A56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D513F9561A8B41D700517A56 /* EDRLoginViewController.h */,
+				D513F9571A8B41D700517A56 /* EDRLoginViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D513F9421A8B290C00517A56 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D513F9541A8B41D700517A56 /* EDRLoginPresenter.h */,
+				D513F9551A8B41D700517A56 /* EDRLoginPresenter.m */,
+				D513F9581A8B41D700517A56 /* EDRLoginPresenterIO.h */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		D513F9431A8B291700517A56 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D513F9511A8B41D700517A56 /* EDRLoginInteractor.h */,
+				D513F9521A8B41D700517A56 /* EDRLoginInteractor.m */,
+				D513F9531A8B41D700517A56 /* EDRLoginInteractorIO.h */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		D513F9441A8B292A00517A56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D513F7EF1A8875F500517A56 /* eDiary.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D513F94F1A8B3A9C00517A56 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D513F7EC1A8875F500517A56 /* EDRAppDelegate.h */,
+				D513F7ED1A8875F500517A56 /* EDRAppDelegate.m */,
+				D513F9501A8B3AD700517A56 /* EDRHeader.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D513F7E41A8875F500517A56 /* eDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D513F80B1A8875F500517A56 /* Build configuration list for PBXNativeTarget "eDiary" */;
+			buildPhases = (
+				AA582B3E0252DCF4BF322BD1 /* Check Pods Manifest.lock */,
+				D513F7E11A8875F500517A56 /* Sources */,
+				D513F7E21A8875F500517A56 /* Frameworks */,
+				D513F7E31A8875F500517A56 /* Resources */,
+				94EEA51BE1F14902E3CF05DC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eDiary;
+			productName = eDiary;
+			productReference = D513F7E51A8875F500517A56 /* eDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D513F8001A8875F500517A56 /* eDiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D513F80E1A8875F500517A56 /* Build configuration list for PBXNativeTarget "eDiaryTests" */;
+			buildPhases = (
+				D513F7FD1A8875F500517A56 /* Sources */,
+				D513F7FE1A8875F500517A56 /* Frameworks */,
+				D513F7FF1A8875F500517A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D513F8031A8875F500517A56 /* PBXTargetDependency */,
+			);
+			name = eDiaryTests;
+			productName = eDiaryTests;
+			productReference = D513F8011A8875F500517A56 /* eDiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D513F7DD1A8875F500517A56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Thiruppathi Gandhi";
+				TargetAttributes = {
+					D513F7E41A8875F500517A56 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D513F8001A8875F500517A56 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D513F7E41A8875F500517A56;
+					};
+				};
+			};
+			buildConfigurationList = D513F7E01A8875F500517A56 /* Build configuration list for PBXProject "eDiary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D513F7DC1A8875F500517A56;
+			productRefGroup = D513F7E61A8875F500517A56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D513F7E41A8875F500517A56 /* eDiary */,
+				D513F8001A8875F500517A56 /* eDiaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D513F7E31A8875F500517A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D513F7FC1A8875F500517A56 /* LaunchScreen.xib in Resources */,
+				D513F7F91A8875F500517A56 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D513F7FF1A8875F500517A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94EEA51BE1F14902E3CF05DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eDiary/Pods-eDiary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA582B3E0252DCF4BF322BD1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D513F7E11A8875F500517A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D513F7EE1A8875F500517A56 /* EDRAppDelegate.m in Sources */,
+				D513F7EB1A8875F500517A56 /* main.m in Sources */,
+				D513F95B1A8B41D700517A56 /* EDRLoginViewController.m in Sources */,
+				D513F9591A8B41D700517A56 /* EDRLoginInteractor.m in Sources */,
+				D513F7F11A8875F500517A56 /* eDiary.xcdatamodeld in Sources */,
+				D513F95A1A8B41D700517A56 /* EDRLoginPresenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D513F7FD1A8875F500517A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D513F8081A8875F500517A56 /* eDiaryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D513F8031A8875F500517A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D513F7E41A8875F500517A56 /* eDiary */;
+			targetProxy = D513F8021A8875F500517A56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D513F7FA1A8875F500517A56 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D513F7FB1A8875F500517A56 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D513F8091A8875F500517A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D513F80A1A8875F500517A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D513F80C1A8875F500517A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 966180B0B9008798B00A23DE /* Pods-eDiary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D513F80D1A8875F500517A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA58ED2D60EF799BB1E508B /* Pods-eDiary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D513F80F1A8875F500517A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = eDiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eDiary.app/eDiary";
+			};
+			name = Debug;
+		};
+		D513F8101A8875F500517A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = eDiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eDiary.app/eDiary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D513F7E01A8875F500517A56 /* Build configuration list for PBXProject "eDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D513F8091A8875F500517A56 /* Debug */,
+				D513F80A1A8875F500517A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D513F80B1A8875F500517A56 /* Build configuration list for PBXNativeTarget "eDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D513F80C1A8875F500517A56 /* Debug */,
+				D513F80D1A8875F500517A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D513F80E1A8875F500517A56 /* Build configuration list for PBXNativeTarget "eDiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D513F80F1A8875F500517A56 /* Debug */,
+				D513F8101A8875F500517A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D513F7EF1A8875F500517A56 /* eDiary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D513F7F01A8875F500517A56 /* eDiary.xcdatamodel */,
+			);
+			currentVersion = D513F7F01A8875F500517A56 /* eDiary.xcdatamodel */;
+			path = eDiary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D513F7DD1A8875F500517A56 /* Project object */;
+}

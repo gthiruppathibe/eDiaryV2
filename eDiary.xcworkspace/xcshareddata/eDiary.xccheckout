@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4BCF08CF-26AB-4B04-B2AD-F9C38F79467A</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</key>
+		<string>https://github.com/gthiruppathibe/eDiary.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</key>
+		<string>eDiary/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gthiruppathibe/eDiary.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9A10F0EE96DCBEE591DE854BA4A3FD02064AE6CC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>eDiary</string>
+		</dict>
+	</array>
+</dict>
+</plist>
