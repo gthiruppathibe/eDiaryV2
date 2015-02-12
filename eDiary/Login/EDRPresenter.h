@@ -8,12 +8,13 @@
 
 
 #import <Foundation/Foundation.h>
-#import "EDRLoginInteractorIO.h"
-#import "EDRLoginPresenterIO.h"
+#import "EDRInteractorIO.h"
+#import "EDRPresenterIO.h"
 
-@interface EDRLoginPresenter : NSObject<EDRLoginInteractorOutput,EDRPresenterInput>
 
-@property (nonatomic,strong) id<EDRLoginInteractorInput> interactor;
+@interface EDRPresenter : NSObject<EDRInteractorOutput,EDRPresenterInput>
+
+@property (nonatomic,strong) id<EDRInteractorInput> interactor;
 @property (nonatomic,strong) id<EDRPresenterOutput> view;
 
 @end

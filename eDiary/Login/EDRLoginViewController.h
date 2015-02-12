@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EDRLoginPresenterIO.h"
+#import "EDRPresenterIO.h"
 
 @interface EDRLoginViewController : UIViewController <EDRPresenterOutput,UITextFieldDelegate>
 

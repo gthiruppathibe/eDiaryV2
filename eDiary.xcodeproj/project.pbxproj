@@ -14,9 +14,10 @@
 		D513F7F91A8875F500517A56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D513F7F81A8875F500517A56 /* Images.xcassets */; };
 		D513F7FC1A8875F500517A56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D513F7FA1A8875F500517A56 /* LaunchScreen.xib */; };
 		D513F8081A8875F500517A56 /* eDiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F8071A8875F500517A56 /* eDiaryTests.m */; };
-		D513F9591A8B41D700517A56 /* EDRLoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F9521A8B41D700517A56 /* EDRLoginInteractor.m */; };
-		D513F95A1A8B41D700517A56 /* EDRLoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F9551A8B41D700517A56 /* EDRLoginPresenter.m */; };
+		D513F9591A8B41D700517A56 /* EDRInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F9521A8B41D700517A56 /* EDRInteractor.m */; };
+		D513F95A1A8B41D700517A56 /* EDRPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F9551A8B41D700517A56 /* EDRPresenter.m */; };
 		D513F95B1A8B41D700517A56 /* EDRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D513F9571A8B41D700517A56 /* EDRLoginViewController.m */; };
+		D5C7146C1A8C74F000AC9F84 /* EDRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C7146B1A8C74F000AC9F84 /* EDRCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		D513F8061A8875F500517A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D513F8071A8875F500517A56 /* eDiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eDiaryTests.m; sourceTree = "<group>"; };
 		D513F9501A8B3AD700517A56 /* EDRHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDRHeader.h; sourceTree = "<group>"; };
-		D513F9511A8B41D700517A56 /* EDRLoginInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginInteractor.h; path = Login/EDRLoginInteractor.h; sourceTree = "<group>"; };
-		D513F9521A8B41D700517A56 /* EDRLoginInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDRLoginInteractor.m; path = Login/EDRLoginInteractor.m; sourceTree = "<group>"; };
-		D513F9531A8B41D700517A56 /* EDRLoginInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginInteractorIO.h; path = Login/EDRLoginInteractorIO.h; sourceTree = "<group>"; };
-		D513F9541A8B41D700517A56 /* EDRLoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginPresenter.h; path = Login/EDRLoginPresenter.h; sourceTree = "<group>"; };
-		D513F9551A8B41D700517A56 /* EDRLoginPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDRLoginPresenter.m; path = Login/EDRLoginPresenter.m; sourceTree = "<group>"; };
+		D513F9511A8B41D700517A56 /* EDRInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRInteractor.h; path = Login/EDRInteractor.h; sourceTree = "<group>"; };
+		D513F9521A8B41D700517A56 /* EDRInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDRInteractor.m; path = Login/EDRInteractor.m; sourceTree = "<group>"; };
+		D513F9531A8B41D700517A56 /* EDRInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRInteractorIO.h; path = Login/EDRInteractorIO.h; sourceTree = "<group>"; };
+		D513F9541A8B41D700517A56 /* EDRPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRPresenter.h; path = Login/EDRPresenter.h; sourceTree = "<group>"; };
+		D513F9551A8B41D700517A56 /* EDRPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDRPresenter.m; path = Login/EDRPresenter.m; sourceTree = "<group>"; };
 		D513F9561A8B41D700517A56 /* EDRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginViewController.h; path = Login/EDRLoginViewController.h; sourceTree = "<group>"; };
 		D513F9571A8B41D700517A56 /* EDRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDRLoginViewController.m; path = Login/EDRLoginViewController.m; sourceTree = "<group>"; };
-		D513F9581A8B41D700517A56 /* EDRLoginPresenterIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRLoginPresenterIO.h; path = Login/EDRLoginPresenterIO.h; sourceTree = "<group>"; };
+		D513F9581A8B41D700517A56 /* EDRPresenterIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDRPresenterIO.h; path = Login/EDRPresenterIO.h; sourceTree = "<group>"; };
+		D5C714671A8C601600AC9F84 /* EDRCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDRCommand.h; sourceTree = "<group>"; };
+		D5C7146B1A8C74F000AC9F84 /* EDRCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDRCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 		D513F7E71A8875F500517A56 /* eDiary */ = {
 			isa = PBXGroup;
 			children = (
+				D5C714661A8C5FE800AC9F84 /* Command */,
 				D513F94F1A8B3A9C00517A56 /* Common */,
 				D513F9441A8B292A00517A56 /* Model */,
 				D513F9431A8B291700517A56 /* Interactor */,
@@ -164,9 +168,9 @@
 		D513F9421A8B290C00517A56 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				D513F9541A8B41D700517A56 /* EDRLoginPresenter.h */,
-				D513F9551A8B41D700517A56 /* EDRLoginPresenter.m */,
-				D513F9581A8B41D700517A56 /* EDRLoginPresenterIO.h */,
+				D513F9541A8B41D700517A56 /* EDRPresenter.h */,
+				D513F9551A8B41D700517A56 /* EDRPresenter.m */,
+				D513F9581A8B41D700517A56 /* EDRPresenterIO.h */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -174,9 +178,9 @@
 		D513F9431A8B291700517A56 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				D513F9511A8B41D700517A56 /* EDRLoginInteractor.h */,
-				D513F9521A8B41D700517A56 /* EDRLoginInteractor.m */,
-				D513F9531A8B41D700517A56 /* EDRLoginInteractorIO.h */,
+				D513F9511A8B41D700517A56 /* EDRInteractor.h */,
+				D513F9521A8B41D700517A56 /* EDRInteractor.m */,
+				D513F9531A8B41D700517A56 /* EDRInteractorIO.h */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -197,6 +201,15 @@
 				D513F9501A8B3AD700517A56 /* EDRHeader.h */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		D5C714661A8C5FE800AC9F84 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				D5C714671A8C601600AC9F84 /* EDRCommand.h */,
+				D5C7146B1A8C74F000AC9F84 /* EDRCommand.m */,
+			);
+			name = Command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,9 +349,10 @@
 				D513F7EE1A8875F500517A56 /* EDRAppDelegate.m in Sources */,
 				D513F7EB1A8875F500517A56 /* main.m in Sources */,
 				D513F95B1A8B41D700517A56 /* EDRLoginViewController.m in Sources */,
-				D513F9591A8B41D700517A56 /* EDRLoginInteractor.m in Sources */,
+				D5C7146C1A8C74F000AC9F84 /* EDRCommand.m in Sources */,
+				D513F9591A8B41D700517A56 /* EDRInteractor.m in Sources */,
 				D513F7F11A8875F500517A56 /* eDiary.xcdatamodeld in Sources */,
-				D513F95A1A8B41D700517A56 /* EDRLoginPresenter.m in Sources */,
+				D513F95A1A8B41D700517A56 /* EDRPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

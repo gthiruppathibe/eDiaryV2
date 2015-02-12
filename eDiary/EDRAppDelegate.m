@@ -10,12 +10,11 @@
 #import "EDRLoginViewController.h"
 #import "EDRHeader.h"
 
-
 @interface EDRAppDelegate ()
 
 @property (nonatomic,strong) EDRLoginViewController *loginViewController;
-@property (nonatomic,strong) EDRLoginPresenter *loginPresenter;
-@property (nonatomic,strong) EDRLoginInteractor *loginInteractor;
+@property (nonatomic,strong) EDRPresenter *presenter;
+@property (nonatomic,strong) EDRInteractor *interactor;
 
 @end
 
@@ -23,8 +22,8 @@
 
 @synthesize loginViewController = _loginViewController;
 @synthesize navController = _navController;
-@synthesize loginPresenter = _loginPresenter;
-@synthesize loginInteractor = _loginInteractor;
+@synthesize presenter = _presenter;
+@synthesize interactor = _interactor;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self createScreen];
@@ -55,18 +54,18 @@
     return  _navController;
 }
 
-- (EDRLoginPresenter*)loginPresenter {
-    if (!_loginPresenter) {
-        _loginPresenter = [[EDRLoginPresenter alloc] init];
+- (EDRPresenter*)presenter {
+    if (!_presenter) {
+        _presenter = [[EDRPresenter alloc] init];
     }
-    return _loginPresenter;
+    return _presenter;
 }
 
-- (EDRLoginInteractor*)loginInteractor {
-    if (!_loginInteractor) {
-        _loginInteractor = [[EDRLoginInteractor alloc] init];
+- (EDRInteractor*)interactor {
+    if (!_interactor) {
+        _interactor = [[EDRInteractor alloc] init];
     }
-    return _loginInteractor;
+    return _interactor;
 }
 
 
@@ -77,10 +76,10 @@
     [self.window setRootViewController:self.loginViewController];
     [self.window makeKeyAndVisible];
     //set delegate for VIPER
-    [self.loginViewController setPresenter:self.loginPresenter];
-    [self.loginPresenter setView:self.loginViewController];
-    [self.loginPresenter setInteractor:self.loginInteractor];
-    [self.loginInteractor setPresenter:self.loginPresenter];
+    [self.loginViewController setPresenter:self.presenter];
+    [self.presenter setView:self.loginViewController];
+    [self.presenter setInteractor:self.interactor];
+    [self.interactor setPresenter:self.presenter];
 }
 
 #pragma mark - Core Data stack

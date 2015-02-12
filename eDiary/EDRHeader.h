@@ -9,8 +9,8 @@
 #ifndef eDiary_EDRHeader_h
 #define eDiary_EDRHeader_h
 
-#import "EDRLoginInteractor.h"
-#import "EDRLoginPresenter.h"
+#import "EDRInteractor.h"
+#import "EDRPresenter.h"
 #import "EDRLoginViewController.h"
 
 #endif
