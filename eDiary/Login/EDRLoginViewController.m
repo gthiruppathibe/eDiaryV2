@@ -7,7 +7,6 @@
 //
 
 #import "EDRLoginViewController.h"
-#import "EDRCommand.h"
 
 @interface EDRLoginViewController ()
 
@@ -167,22 +166,14 @@
 
 #pragma mark presenter delegate method
 
-- (void) commandResponse:(ICommand*)command
-{
-    if ([command isKindOfClass: [LoginResponseCommand class]]) {
-    
-        LoginResponseCommand *loginResponse = (LoginResponseCommand*)command;
-        [self loginCredentialResponse:loginResponse.loginMessage];
-    }
-}
-
-- (void)loginCredentialResponse:(NSString*)message {
+- (void) loginCredentialResponse:(NSString*) message {
     
     UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle: nil message:message delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
     [loginAlert show];
     
     [self screenEnable:YES];
 }
+
 
 #pragma mark perform action
 
@@ -198,15 +189,9 @@
     }
 }
 
-- (void) btnLoginClicked: (id) sender
-{
+- (void) btnLoginClicked: (id) sender {
     [self screenEnable:NO];
-    
-    LoginRequestCommand *loginRequest = [[LoginRequestCommand alloc] init];
-    loginRequest.email = self.emailField.text;
-    loginRequest.password = self.passwordField.text;
-    
-    [self.presenter commandRequest:loginRequest];
+    [self.presenter loginCredentialWithEmail:self.emailField.text Password:self.passwordField.text];
 }
 
 @end

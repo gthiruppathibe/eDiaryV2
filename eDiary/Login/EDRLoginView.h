@@ -8,16 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class ICommand;
 
-@protocol EDRPresenterInput <NSObject>
+@protocol EDRLoginView <NSObject>
 
-- (void) commandRequest:(ICommand*)command;
-
-@end
-
-@protocol EDRPresenterOutput <NSObject>
-
-- (void) commandResponse:(ICommand*)command;
+- (void) loginCredentialResponse:(NSString*)message;
 
 @end

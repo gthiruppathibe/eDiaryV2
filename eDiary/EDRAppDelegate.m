@@ -13,8 +13,8 @@
 @interface EDRAppDelegate ()
 
 @property (nonatomic,strong) EDRLoginViewController *loginViewController;
-@property (nonatomic,strong) EDRPresenter *presenter;
-@property (nonatomic,strong) EDRInteractor *interactor;
+@property (nonatomic,strong) EDRLoginPresenter *presenter;
+@property (nonatomic,strong) EDRLoginInteractor *interactor;
 
 @end
 
@@ -54,16 +54,16 @@
     return  _navController;
 }
 
-- (EDRPresenter*)presenter {
+- (EDRLoginPresenter*)presenter {
     if (!_presenter) {
-        _presenter = [[EDRPresenter alloc] init];
+        _presenter = [[EDRLoginPresenter alloc] init];
     }
     return _presenter;
 }
 
-- (EDRInteractor*)interactor {
+- (EDRLoginInteractor*)interactor {
     if (!_interactor) {
-        _interactor = [[EDRInteractor alloc] init];
+        _interactor = [[EDRLoginInteractor alloc] init];
     }
     return _interactor;
 }
