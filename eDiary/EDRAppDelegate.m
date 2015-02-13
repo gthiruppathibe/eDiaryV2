@@ -9,21 +9,17 @@
 #import "EDRAppDelegate.h"
 #import "EDRLoginViewController.h"
 #import "EDRHeader.h"
+#import "EDRWireFrame.h"
 
 @interface EDRAppDelegate ()
 
-@property (nonatomic,strong) EDRLoginViewController *loginViewController;
-@property (nonatomic,strong) EDRLoginPresenter *presenter;
-@property (nonatomic,strong) EDRLoginInteractor *interactor;
 
 @end
 
 @implementation EDRAppDelegate
 
-@synthesize loginViewController = _loginViewController;
 @synthesize navController = _navController;
-@synthesize presenter = _presenter;
-@synthesize interactor = _interactor;
+@synthesize wireframe = _wireframe;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self createScreen];
@@ -40,46 +36,36 @@
     return _window;
 }
 
-- (EDRLoginViewController*)loginViewController {
-    if (!_loginViewController) {
-        _loginViewController = [[EDRLoginViewController alloc] init];
+- (EDRWireFrame*)wireframe {
+    if(!_wireframe) {
+        _wireframe = [[EDRWireFrame alloc] init];
     }
-    return _loginViewController;
+    return _wireframe;
 }
 
 - (UINavigationController*)navController {
     if (!_navController) {
-        _navController = [[UINavigationController alloc] initWithRootViewController:self.loginViewController];
+        _navController = [[UINavigationController alloc] initWithRootViewController:self.wireframe.loginViewController];
     }
     return  _navController;
 }
 
-- (EDRLoginPresenter*)presenter {
-    if (!_presenter) {
-        _presenter = [[EDRLoginPresenter alloc] init];
-    }
-    return _presenter;
-}
-
-- (EDRLoginInteractor*)interactor {
-    if (!_interactor) {
-        _interactor = [[EDRLoginInteractor alloc] init];
-    }
-    return _interactor;
-}
 
 
 #pragma mark create screen
 
 - (void) createScreen {
     [self.window setBackgroundColor:[UIColor whiteColor]];
-    [self.window setRootViewController:self.loginViewController];
+    [self.window setRootViewController:self.wireframe.loginViewController];
     [self.window makeKeyAndVisible];
     //set delegate for VIPER
-    [self.loginViewController setPresenter:self.presenter];
-    [self.presenter setView:self.loginViewController];
-    [self.presenter setInteractor:self.interactor];
-    [self.interactor setPresenter:self.presenter];
+    
+    [self.wireframe setAppDelegate:self];
+    
+    [self.wireframe.loginViewController setPresenter:self.wireframe.loginPresenter];
+    [self.wireframe.loginPresenter setView:self.wireframe.loginViewController];
+    [self.wireframe.loginPresenter setInteractor:self.wireframe.loginInteractor];
+    [self.wireframe.loginInteractor setPresenter:self.wireframe.loginPresenter];
 }
 
 #pragma mark - Core Data stack
